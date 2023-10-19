@@ -19,7 +19,7 @@ void string_err(int error_code, ...)
 	l_num = va_arg(ag, int);
 	switch (error_code)
 	{
-        /* stating cases */
+		/* stating cases */
 		case 10:
 			fprintf(stderr, "L%d: can't pchar, value out of range\n", l_num);
 			break;
@@ -51,7 +51,7 @@ void more_err(int error_code, ...)
 	va_start(ag, error_code);
 	switch (error_code)
 	{
-        /* stating cases */
+		/* stating cases */
 		case 6:
 			fprintf(stderr, "L%d: can't pint, stack empty\n",
 				va_arg(ag, int));
@@ -78,12 +78,12 @@ void more_err(int error_code, ...)
 
 
 /**
- * err - Prints appropiate error messages 
- * @error_code: The error 
+ * err - Prints appropiate error messages
+ * @error_code: The error
  * (1) => The user does not give .
  * (2) => The file provided is not a file that can be opened or read.
  * (3) => The file provided contains an invalid instruction.
- * (4) => When the 
+ * (4) => When the
  * (5) => When the parameter passed to the instruction "push" is not an int.
  * (6) => When the stac
  * (7) => When the stack it empty for pop.
@@ -98,7 +98,7 @@ void err(int error_code, ...)
 	va_start(ag, error_code);
 	switch (error_code)
 	{
-        /* stating cases */
+		/* stating cases */
 		case 1:
 			fprintf(stderr, "USAGE: monty file\n");
 			break;
